@@ -1,2 +1,6 @@
 <h1>this is my home page</h1>
-<p>{{ stuff }}</p>
+<p>{{ stock }}</p>
+<br/></br/>
+{{#each stock}}
+    {{@key}} | {{this}}
+{{/each}}
