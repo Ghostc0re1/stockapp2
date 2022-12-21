@@ -1,6 +1,10 @@
-<h1>this is my home page</h1>
-<p>{{ stock }}</p>
-<br/></br/>
-{{#each stock}}
-    {{@key}} | {{this}}
-{{/each}}
+<title>Home Page</title>
+<h1><br/><strong>{{stock.companyName}}</strong> | <strong>{{stock.symbol}}</strong></br/></h1>
+Data provided by: <a href="https://iexcloud.io">IEX Cloud</a><br/>
+<strong>Latest Price: </strong>${{stock.latestPrice}}<br/> 
+<strong>Previous Close: </strong>${{stock.previousClose}}<br/> 
+<strong>Percent Change: </strong>{{stock.changePercent}}%<br/> 
+<strong>Market Cap: </strong>${{stock.marketCap}}<br/> 
+<strong>Year-to-Date Change: </strong>{{stock.ytdChange}}%<br/> 
+<strong>52 Week High: </strong>${{stock.week52High}}<br/> 
+<strong>52 Week Low: </strong>${{stock.week52Low}}<br/> 

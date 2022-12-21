@@ -1,2 +1,6 @@
-<h1>this is the info page</h1>
-<p>{{ stock }}</p>
+<title>Info</title>
+<h1><br/><strong>{{stock.companyName}}</strong> | <strong>{{stock.symbol}}</strong></br/></h1>
+Data provided by: <a href="https://iexcloud.io">IEX Cloud</a><br/>
+{{#each stock}}
+    {{@key}}{{ stock }}
+{{/each}}
